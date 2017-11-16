@@ -5,7 +5,7 @@ MAINTAINER Nikita Bulai <bulaj.nikita@gmail.com>
 ENV DEBIAN_FRONTEND noninteractive
 
 # Install dependencies
-RUN apt-get update && apt-get -y install wget xvfb unzip libgconf2-4 libnss3 nodejs
+RUN apt-get update && apt-get -y install wget xvfb unzip libgconf2-4 libnss3 nodejs netcat
 
 # Install Chrome
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
